@@ -1,0 +1,72 @@
+@-webkit-keyframes debaixoparacima {
+  0% {
+    transform: translateY(100px);
+    opacity: 0.1;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.info-disco {
+  display: flex;
+  justify-content: center;
+  animation: debaixoparacima 0.5s;
+}
+
+.sobredisco {
+  margin-top: 25px;
+  text-align: center;
+  width: 800px;
+  background: rgb(27, 27, 27);
+  padding: 25px;
+  color: #fff;
+}
+
+.sobredisco h1 {
+  margin-bottom: 20px;
+  font-family: "merrant";
+}
+
+.sobredisco p {
+  text-align: justify;
+  margin-bottom: 20px;
+  font-family: "merrant";
+}
+
+.sobredisco ul {
+  font-family: "merrant";
+}
+
+.mackingoff img {
+  margin: 30px 10px;
+  width: 200px;
+}
+
+.mais-um-tempo-container,
+.cidade-das-palhas-container,
+.aniquilacao-container,
+.quatro-paredes-container,
+.alo-deus-container,
+.tupa-container,
+.cadente-container,
+.juma-container,
+.arma-container,
+.tropical-container{
+  display: none;
+}
+
+.mais-um-tempo-container.mostrardesc,
+.cidade-das-palhas-container.mostrardesc,
+.aniquilacao-container.mostrardesc,
+.quatro-paredes-container.mostrardesc,
+.alo-deus-container.mostrardesc,
+.tupa-container.mostrardesc,
+.cadente-container.mostrardesc,
+.juma-container.mostrardesc,
+.arma-container.mostrardesc,
+.tropical-container.mostrardesc {
+  display: flex;
+}

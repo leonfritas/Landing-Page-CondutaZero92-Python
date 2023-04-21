@@ -1,0 +1,317 @@
+@media (max-width: 650px) {
+  body {
+
+    background: url(../images/bgResponsivo.jpg) no-repeat center;
+    background-size: cover;
+     background-attachment: fixed;
+  }
+
+  /* Menu */
+
+  .cabecalho {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    position: relative;
+  }
+  .cabecalho nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  .logo {
+    left: 25px;
+    top: 5px;
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .cabecalho .menu {
+
+    display: none;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    flex-direction: column;
+ 
+  }
+
+  /* header{border: 1px solid orange;}
+  img{border: 1px solid blue;}
+  nav{border: 1px solid green;}
+  .menuHamburguer{border: 1px solid yellow;} */
+
+
+  nav{
+    width: 100%;
+    height: 100px;
+    position: relative;
+  }
+
+  .menuHamburguer{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right:0;
+    display: flex;
+    
+  }
+
+span{
+    margin-left: 40px;
+
+  }
+  
+
+  .cabecalho nav label{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .hamburguer{
+    background-color: white;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: 0.6s ease-in-out; 
+  }
+
+ 
+
+  .cabecalho .hamburguer:before,
+  .cabecalho .hamburguer:after{
+    background-color: white;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+}
+
+
+.cabecalho .hamburguer:before{
+  top: -10px;
+}
+
+.cabecalho .hamburguer:after{
+  bottom: -10px;
+}
+
+.cabecalho input{
+  display: none;
+}
+
+ .cabecalho input:checked ~ label .hamburguer{
+  transform: rotate(45deg);
+}
+
+.cabecalho input:checked ~ label .hamburguer:before{
+  transform: rotate(90deg);
+  top: 0;
+}
+
+.cabecalho input:checked ~ label .hamburguer:after{
+  transform: rotate(90deg);
+  bottom: 0;
+
+} 
+.cabecalho .menuHamburguer{
+  display: block;
+}
+
+.cabecalho nav .menu{
+  display: none;
+}
+.cabecalho nav input:checked ~ ul{
+  display: block;
+   /* animation: delapraca 0.5s;  */
+}
+
+/* .cabecalho nav ul{
+  display: block;
+} */
+
+/* .cabecalho nav input:checked ~ ul{
+  display: block;
+  animation: delapraca 0.5s;
+}
+ */
+
+
+
+
+
+@-webkit-keyframes delapraca {
+  0% {
+    opacity: 0;
+    transform:translateX(50px)
+  }
+
+  100% {
+    opacity: 1;
+    transform:translateX(0)
+  }
+}
+
+
+.cabecalho nav{
+  z-index: 1;
+}
+
+.cabecalho nav ul{
+  width: 200px;
+  padding-top: 50px;
+  width: 200px;
+  position: absolute;
+  right: 0;
+}
+
+nav li{
+  text-align: right;
+  width: 150px;
+  margin-left: -20px;
+}
+
+.item:hover{
+  transform: scale(1.8);
+  border-bottom: none;
+}
+
+
+
+
+
+  /* Home */
+
+  /* .home-container{
+    border: 2px solid green
+  } */
+
+  .icones {
+    position: relative;
+  }
+
+  .home-container {
+    min-height: 100vh;
+  }
+
+  /* Loja */
+
+  .loja-container{
+    margin-top: 100px;
+  }
+
+  .produto {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .loja .produto img:hover {
+    transform: none;
+    transition: 0.5s ease-in-out;
+  }
+
+
+
+  /* Discografia */
+
+  .discografia-container{
+    margin-top: 100px;
+  }
+
+  .disco {
+    box-shadow: none;
+  }
+
+  .sobredisco {
+    width: 90%;
+  }
+
+  iframe {
+    width: 80%;
+    height: 20%;
+  }
+
+  .info-disco{
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  /* Fotos */
+
+  .fotos-container{
+    margin-top: 120px;
+  }
+
+  .galeria {
+    margin: 10px 20px;
+  }
+
+  .foto:hover {
+    transform: none;
+  }
+  .foto {
+    transition: none;
+  }
+
+  .footer {
+    color: #000;
+  }
+
+  /* CARROSSEL */
+
+  /* .carrossel-container .slide img{
+    width: 300px;
+
+  } */
+
+  /* CADASTRO */
+
+  .botao{
+    margin-top: 30px;
+  }
+
+  .formulario{
+    width: 80%;
+  }
+
+  .labelNome, .labelEmail{
+    display: none;
+  }
+  .campo { 
+    width: 100%;
+    padding: 5px;
+  }
+  input::placeholder{
+    color:white;
+  }
+
+}
+
+@media (max-width: 350px) {
+  /* Discografia */
+  .disco {
+    width: 250px;
+    height: 330px;
+  }
+  .disco img {
+    width: 100%;
+  }
+
+  audio {
+    display: none;
+  }
+
+  iframe {
+    width: 70%;
+    height: 20%;
+  }
+}

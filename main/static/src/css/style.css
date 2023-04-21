@@ -1,0 +1,340 @@
+@-webkit-keyframes debaixoparacima {
+  0% {
+    transform: translateY(100px);
+    opacity: 0.1;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* HOME */
+
+.home-container {
+  min-height: 80vh;
+  animation: debaixoparacima 0.5s;
+}
+
+.icones {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  gap: 15px;
+}
+
+.icon {
+  margin-bottom: 10px;
+}
+
+.home-container {
+  display: none;
+}
+
+.home-container.mostrar {
+  display: flex;
+}
+
+/* LOJA */
+
+.loja {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: debaixoparacima 0.5s;
+  min-height: 110vh;
+  margin: 50px 100px 0 100px ;
+
+}
+
+.loja-container {
+  margin-bottom: 0;
+  
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+
+.loja .produto {
+  width: 250px;
+  height: 300px;
+}
+
+.loja .produto img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.loja .produto img:hover {
+  /* transform: scale(1.2); */
+  transition: 0.5s ease-in-out;
+}
+
+.loja .produto .informacoes {
+  color: #000000;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.loja .produto .informacoes .preco {
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-align: center;
+  font-weight: 800;
+  font-size: 25px;
+  animation: delapraca 2s;
+}
+
+@-webkit-keyframes delapraca {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.loja-container {
+  display: none;
+}
+
+.loja-container.mostrar {
+  display: flex;
+}
+
+/* DISCOGRAFIA */
+
+.discografia {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 80px;
+  margin-top: 50px;
+  animation: debaixoparacima 0.5s;
+}
+.disco {
+  box-shadow: 3px 3px 10px black;
+  margin: 20px;
+  background: linear-gradient(to top, black, white);
+  height: 500px;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.titulo {
+  text-align: center;
+  position: relative;
+  top: 4px;
+  font-size: 22px;
+  font-family: "xhers", Times, serif;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+.capa {
+  width: 330px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.musicas {
+  margin: 20px;
+}
+
+.audio {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.link {
+  color: #fff;
+  margin-left: 10px;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 1px solid #000;
+  background: linear-gradient(to right, rgb(95, 13, 13), rgb(245, 8, 8));
+  padding: 5px;
+  border-radius: 30px;
+}
+
+.discografia-container {
+  display: none;
+}
+
+.discografia-container.mostrar {
+  display: flex;
+}
+
+.voltarDiscografia{
+  padding: 5px;
+}
+
+.sobredisco{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FOTOS */
+
+.fotos-container {
+  margin-top: 50px;
+  animation: debaixoparacima 0.5s;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2vw;
+  padding: 0 2vw;
+}
+
+.foto {
+  max-width: 240px;
+  height: 240px;
+  border: 10px solid #fff;
+  box-shadow: 5px 5px 5px #0006;
+  flex-grow: 1;
+  transition: transform 0.1s linear;
+}
+
+.foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.foto:hover {
+  transform: scale(1.1);
+}
+
+.agradecimentos {
+  margin-top: 5px;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #fff;
+}
+
+.fotos-container {
+  display: none;
+}
+.fotos-container.mostrar {
+  display: block;
+}
+
+/* CARROSSEL DE IMAGENS */
+
+.carrossel-container {
+  animation: debaixoparacima 0.5s;
+  display: none;
+  position: relative;
+}
+
+/* CONTATO */
+
+.contato-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  color: white;
+  animation: debaixoparacima 0.5s;
+}
+
+.formulario {
+  background: url(../images/background.jpg)center;
+  /* background-position-x: 15px; */
+  padding: 80px 50px 10px 50px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: 350px;
+  gap: 5px;
+  border: 2px solid white;
+  
+}
+
+.titulo {
+  text-align: center;
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.label-input{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.campo {
+  background: none;
+  border: none;
+  border: 2px solid white;
+  outline: none;
+  width: 100%;
+  border-radius: 10px;
+  height:30px;
+  letter-spacing: 1px;
+  color: rgb(226, 253, 253);
+  width: 80%;
+}
+
+.campodata {
+  padding: 3px;
+  border-radius: 8px;
+  background-image: url(../images/foto4.jpg);
+}
+
+.divBotao{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.botao {
+  margin : 30px;
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  background: linear-gradient(to right, rgb(92, 92, 252), rgb(46, 126, 126));
+  color: rgb(226, 243, 243);
+  width: 80px;
+}
+
+.botao:hover {
+  cursor: pointer;
+}
+
+.contato-container {
+  display: none;
+}
+
+.contato-container.mostrar {
+  display: flex;
+}
+
+input::placeholder{
+  color:white;
+}
+
+/* APÓS O CADASTRO */
+
+.esconder{
+  display: none;
+}
+

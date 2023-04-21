@@ -1,0 +1,71 @@
+body{
+    background: url('../images/bg.jpg') no-repeat fixed;
+    background-size: cover;
+    /* transition: 0.5s ease-in-out;
+    min-height: 100vh; */
+  
+    
+}
+
+/* body.mostrar{
+    backdrop-filter: blur(5px);
+    background-size: cover;
+    transition: 0.5s ease-in-out;
+} */
+
+@font-face{
+    font-family: 'xhers';
+    src: url('../fonts/Xhers\ Regular.otf');
+}
+
+@font-face {
+    font-family: 'merrant';
+    src: url(../fonts/MERRANT-REGULAR.OTF);
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.logo{
+    margin-left: 80px;
+    height: 80px;
+    width: 70px;
+    margin-top: 15px; 
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    font-size: 25px; 
+    margin-right: 80px;
+}
+
+.item{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-shadow: 3px 3px 2px rgb(26, 24, 24);
+    font-family: 'xhers', Courier, monospace;
+    letter-spacing: 3px;
+    transition: 0.1s;
+}
+
+.item:hover{
+    transform: scale(1.8);
+    border-bottom: 3px solid white;
+}
+
+a:active{
+    color: transparent;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.cabecalho input{
+    display: none;
+  }
