@@ -77,8 +77,11 @@ WSGI_APPLICATION = 'conduta.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'condutaweb',
+        'USER': 'root',
+        'PASSWORD': '*91984948',
+        'HOST': 'localhost',
     }
 }
 
