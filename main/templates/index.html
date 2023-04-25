@@ -682,37 +682,38 @@
 
             </div>
          -->
-            <form action="/" method="GET" class="formulario">
-                <!-- action="https://api.staticforms.xyz/submit" method="POST" -->
-                <!-- <input type="hidden" name="accessKey" value="6a3012d9-648b-4396-b83d-d84baf833bb1">
-                <input type="hidden" name="redirectTo" value="https://www.condutazero92.com.br"> -->
+         <form action="" method="POST" class="formulario">
+            <!-- action="https://api.staticforms.xyz/submit" method="POST" -->
+            <!-- <input type="hidden" name="accessKey" value="6a3012d9-648b-4396-b83d-d84baf833bb1">
+            <input type="hidden" name="redirectTo" value="https://www.condutazero92.com.br%22%3E/ -->
+            {% csrf_token %}
 
-                
-                <div class="label-input">
-                    <label class="labelNome" for="nome"><strong>Nome:</strong></label>
-                    <input type="text"  placeholder="Digite seu nome aqui"  name="name" id="nome" class="campo campoNome" >
-                </div>
-                <br>
-                
-                <br>
-                <div class="label-input">
-                    <label class="labelEmail" for="email" ><strong>E-mail:</strong></label>
-                    <input type="text" placeholder="Digite seu e-mail aqui"  name="email" id="email" class="campo campoEmail" >
-                </div>
-                <br>
-                <div class="divCampoData">
-                    <label class="labelData" for="Data"><strong>Data de nascimento:</strong></label>
-                    <input type="date" name="name" id="data" class="campodata" >
-                </div>
-                <div class="divBotao ">
-                    <button class="botao" onclick="ingresso(event)" type="submit"><b>Enviar</b></button>
-                </div>
 
-                <div class="agradecimento esconder">
-                    <p>Obrigado por fazer parte disso.</p>
-                </div>
-                
-            </form>
+            <div class="label-input">
+                {{form.name.label}}
+                {{form.name}}
+            </div>
+            <br>
+
+            <br>
+            <div class="label-input">
+                {{form.email.label}}
+                {{form.email}}
+            </div>
+            <br>
+            <div class="divCampoData">
+                {{form.birth_date.label}}
+                {{form.birth_date}}
+            </div>
+            <div class="divBotao ">
+                <button class="botao" onclick="ingresso(event)" type="submit"><b>Enviar</b></button>
+            </div>
+
+            <div class="agradecimento esconder">
+                <p>Obrigado por fazer parte disso.</p>
+            </div>
+
+        </form>
 
         <!-- </div> -->
 

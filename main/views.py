@@ -14,11 +14,14 @@ def get_index(request):
         if form.is_valid():
             name = form.cleaned_data['name']
             email = form.cleaned_data['email']
+            birth_date = form.cleaned_data['birth_date']
 
             userGame = UserGame()
             userGame.name = name
             userGame.email = email
+            userGame.birth_date = birth_date
             userGame.save()
+            print('1')
 
             messages.add_message(request, messages.SUCCESS, 'Dados Salvos com Sucesso!')
     else:

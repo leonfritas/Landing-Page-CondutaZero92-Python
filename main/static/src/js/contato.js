@@ -22,12 +22,6 @@ const ingresso = (event)=>{
         }
         agradecimento[0].classList.remove('esconder')
         console.log(event)  
-        
-        function enviarParametros(){
-
-            paramNome = campoNome.value
-
-        }
 
         event.preventDefault()
 

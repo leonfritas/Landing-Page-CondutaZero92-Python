@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'condutaweb',
         'USER': 'root',
-        'PASSWORD': '*91984948',
+        'PASSWORD': '01042018',
         'HOST': 'localhost',
     }
 }
