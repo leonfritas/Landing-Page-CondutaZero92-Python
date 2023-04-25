@@ -1,5 +1,3 @@
-
-
 const containers = document.querySelectorAll(".conteudo")
 const home = document.getElementById("home")
 const loja = document.getElementById("loja")
@@ -177,7 +175,7 @@ contato.addEventListener("click", ()=>{
 jogo.addEventListener("click", ()=>{
     console.log(audioGame)
 
-    audioGame[0].src = "{% '/src/music/audiogamemk.mp3' %}"
+    audioGame[0].src = audioStartGame
 
 
     for(i = 0; i <=6; i++){
@@ -201,24 +199,24 @@ jogo.addEventListener("click", ()=>{
     
         
     
-        if (obstaculoPosition < 200 && obstaculoPosition > 0 && personagemPosition < 80){
+        if (obstaculoPosition < 100 && obstaculoPosition > 0 && personagemPosition < 80){
 
             clearInterval(loopReset)
 
-            audioGameFalhou[0].src = './src/music/audiogamefalhou.mp3'
+            audioGameFalhou[0].src = audioGameOver
             mostrarDisqueteSalvar()
 
             
             console.log(personagem.src)
-            obstaculo.style.animation = 'none'
+            obstaculo.style.animation = pararAnimacao
             obstaculo.style.left = `${obstaculoPosition}px`;
     
-            personagem.style.animation = 'none'
+            personagem.style.animation = pararAnimacao
             personagem.style.bottom = `${personagemPosition}px`;
     
-            personagem.src = '././src/images/jogo/gameover.png'
+            personagem.src = imgGameOver
     
-            botaoReset[0].style = 'display: block'
+            botaoReset[0].style = mostrarObjeto
 
     
         }

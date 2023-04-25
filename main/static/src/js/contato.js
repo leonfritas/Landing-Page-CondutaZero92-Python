@@ -8,15 +8,7 @@ const divCampoData = document.getElementsByClassName('divCampoData')
 const botaoEnviar = document.getElementsByClassName('botao')
 const cadastroContainer = document.getElementsByClassName('contato-container')
 
-$.ajax({function(){
-    url: 'url;',
-    post:'',
-    data:{
-        'campoNome':'',
-        '':'',
-        '':'',
-    }
-}})
+
 
 
 const ingresso = (event)=>{

@@ -28,7 +28,7 @@
     width: 100px;
     right: 200px;
     animation: obstaculo-animation 1.5s infinite linear;
-    /* border: 1px solid black; */
+    /* border: 1px solid red; */
  
   }
 
@@ -36,8 +36,8 @@
     width:150px;
     position: absolute;
     bottom: 0;
-   
-    /* border: 1px solid white; */
+
+    /* border: 1px solid black; */
     
    
     
@@ -45,6 +45,47 @@
 
   .jump{
     animation: jump 500ms  ease-out;
+  }
+
+
+  @keyframes obstaculo-velocidadeaumentada3x {
+
+    from{
+        right: -200px;
+    }
+
+    to{
+        right: 100%;
+
+    }
+    
+  }
+
+
+  @keyframes obstaculo-velocidadeaumentada2x {
+
+    from{
+        right: -200px;
+    }
+
+    to{
+        right: 100%;
+
+    }
+    
+  }
+
+  @keyframes obstaculo-velocidadeaumentada {
+
+    from{
+        right: -200px;
+    }
+
+    to{
+        right: 100%;
+
+    }
+    
   }
 
   @keyframes obstaculo-animation {
