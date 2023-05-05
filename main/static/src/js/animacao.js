@@ -13,6 +13,10 @@ const selectCaracter = document.getElementsByClassName('select-caracter')
 const audioGame = document.getElementsByClassName('audioGame')
 const audioGameFalhou = document.getElementsByClassName('audioGameFalhou')
 const voltarDiscografia = document.getElementsByClassName('voltarDiscografia')
+let menuHamburguer = document.getElementById('menu-hamburguer')
+const turnYourPhone = document.getElementsByClassName('turnYourPhone')
+
+
 
 
 
@@ -94,6 +98,12 @@ home.addEventListener("click", () => {
     for(i = 0; i <= 6; i++){
         containers[i].classList.remove("mostrar")
     }
+    menuHamburguer.checked = false;
+    body.classList.remove('background')
+    
+    
+    turnYourPhone[0].style = esconderObjeto
+    imgPlayPause[0].style = esconderObjeto
     containers[0].classList.add("mostrar")
     //
     body.classList.remove("mostrar")
@@ -110,6 +120,11 @@ loja.addEventListener("click", ()=>{
     for(i = 0; i <=6; i++){
         containers[i].classList.remove("mostrar")
     }
+    console.log(body)
+    body.classList.add('background')
+    menuHamburguer.checked = false;
+    turnYourPhone[0].style = esconderObjeto
+    imgPlayPause[0].style = esconderObjeto
     //
     containers[1].classList.add("mostrar")
     //
@@ -126,6 +141,10 @@ discografia.addEventListener("click", ()=>{
     for(i = 0; i <=6; i++){
         containers[i].classList.remove("mostrar")
     }
+    body.classList.add('background')
+    menuHamburguer.checked = false;
+    turnYourPhone[0].style = esconderObjeto
+    imgPlayPause[0].style = esconderObjeto
     //
     containers[2].classList.add("mostrar")
     //
@@ -142,6 +161,10 @@ fotos.addEventListener("click", ()=>{
     for(i = 0; i <=6; i++){
         containers[i].classList.remove("mostrar")
     }
+    body.classList.add('background')
+    menuHamburguer.checked = false;
+    turnYourPhone[0].style = esconderObjeto
+    imgPlayPause[0].style = esconderObjeto
     //
     containers[3].classList.add("mostrar")
     //
@@ -158,6 +181,11 @@ contato.addEventListener("click", ()=>{
     for(i = 0; i <=6; i++){
         containers[i].classList.remove("mostrar")
     }
+    body.classList.add('background')
+    menuHamburguer.checked = false;
+    imgPlayPause[0].style = esconderObjeto
+    
+    turnYourPhone[0].style = esconderObjeto
     //
     containers[5].classList.add("mostrar")
     //
@@ -173,9 +201,13 @@ contato.addEventListener("click", ()=>{
 })
 
 jogo.addEventListener("click", ()=>{
-    console.log(audioGame)
+    body.classList.add('background')
+    menuHamburguer.checked = false;
 
+    turnYourPhone[0].classList.add('esconderTurnYourPhone')
+    imgPlayPause[0].style = mostrarObjeto
     audioGame[0].src = audioStartGame
+
 
 
     for(i = 0; i <=6; i++){
@@ -196,9 +228,7 @@ jogo.addEventListener("click", ()=>{
 
         const obstaculoPosition = obstaculo.offsetLeft;
         const personagemPosition = +window.getComputedStyle(personagem).bottom.replace('px', '');
-    
-        
-    
+  
         if (obstaculoPosition < 100 && obstaculoPosition > 0 && personagemPosition < 80){
 
             clearInterval(loopReset)
@@ -218,10 +248,7 @@ jogo.addEventListener("click", ()=>{
     
             botaoReset[0].style = mostrarObjeto
 
-    
         }
     }, 10);
     
-
-
 })

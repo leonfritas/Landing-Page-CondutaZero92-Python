@@ -10,7 +10,6 @@ const cadastroContainer = document.getElementsByClassName('contato-container')
 
 
 
-
 const ingresso = (event)=>{
     if (campoNome.value != '' &&
         campoEmail.value != '' &&
@@ -21,10 +20,8 @@ const ingresso = (event)=>{
             labelInput[i].classList.add('esconder')
         }
         agradecimento[0].classList.remove('esconder')
-        console.log(event)  
 
         event.preventDefault()
-
 
         const resetarForm = ()=>{
             campoNome.value = '' 

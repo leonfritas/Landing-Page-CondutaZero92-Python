@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -16,23 +15,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Banda Amazonense que vem atuando na cena musical manauara desde 2017.">
     <title>Conduta Zero 92</title>
-    <link rel="stylesheet" type="text/css" href="{% static '/src/css/reset.css' %}">
-    <link rel="stylesheet"  href="{% static '/src/css/style.css' %}">
-    <link rel="shortcut icon" href="{% static '/src/images/favicon.png' %}" type="image/x-icon">
-    <link rel="stylesheet" href="{% static '/src/css/menu.css' %}">
-    <link rel="stylesheet" href="{% static '/src/css/infodisco.css' %}">
-    <link rel="stylesheet" href="{% static '/src/css/carrossel.css' %}">
-    <link rel="stylesheet" href="{% static '/src/css/responsivo.css' %}">
-    <link rel="stylesheet" href="{% static '/src/css/jogo.css' %}">
-    <link rel="stylesheet" href="{% static '/src/css/variaveis.css' %}">
-    <link rel="stylesheet" href="{% static '/src/css/animacaoSelectPersonagem.css' %}">
+    <link rel="stylesheet" type="text/css" href="src/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link rel="shortcut icon" href="src/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/menu.css">
+    <link rel="stylesheet" href="src/css/infodisco.css">
+    <link rel="stylesheet" href="src/css/carrossel.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+    <link rel="stylesheet" href="src/css/jogo.css">
+    <link rel="stylesheet" href="src/css/variaveis.css">
+    <link rel="stylesheet" href="src/css/animacaoSelectPersonagem.css">
+    <link rel="stylesheet" href="src/css/gameBoardResponsivo.css">
 </head>
 
 <body id="body">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ML9JNPM" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <header class="cabecalho">
-        <img class="logo" src="{% static '/src/images/condutalogo.png' %}" alt="logo conduta092">
+        <img class="logo" src="src/images/condutalogo.png" alt="logo conduta092">
         <nav>
 
             <input type="checkbox" id="menu-hamburguer" />
@@ -55,19 +55,26 @@
     <main>
     </main>
     <section class="conteudo home-container mostrar ">
-        <ul class="icones">
-            <li class="icon iconspot"><a href="https://open.spotify.com/artist/4EubQP2SiqWFpfzPUzaiHu"
-                    target="_blank"><img src="{% static '/src/images/spotify.png' %}"></a></li>
-            <li class="icon"><a href="https://www.instagram.com/conduta092oficial/" target="_blank"><img
-                        src="{% static 'src/images/instagram.png' %}"></a></li>
-            <li class="icon"><a href="https://www.youtube.com/c/Conduta092Oficial" target="_blank"><img
-                        src="{% static '/src/images/youtube.png' %}"></a></li>
-        </ul>
+        
+        <iframe class="youtubeHome" width="560" height="315" src="https://www.youtube.com/embed/aVWoeGiFGsE" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+        picture-in-picture; web-share" allowfullscreen></iframe>
+        <img class="imgHome" src="src/images/imgHome.png" alt="">
+        
+        <div class="icones">
+            <a class= 'icon'href="https://open.spotify.com/artist/4EubQP2SiqWFpfzPUzaiHu" target="_blank">
+                <img class='imgIcon' src="src/images/spotify.png"></a>
+            <a class= 'icon' href="https://www.instagram.com/conduta092oficial/" target="_blank">
+                <img class='imgIcon' src="src/images/instagram.png"></a>
+            <a class= 'icon' href="https://www.youtube.com/c/Conduta092Oficial" target="_blank">
+                <img class='imgIcon' src="src/images/youtube.png"></a>
+        </div>
     </section>
 
     <section class="conteudo loja-container loja">
         <div class="produto">
-            <a href="https://wa.me/5592992112443" target="_blank"><img src="{% static '/src/images/loja/produto1.jpg' %}"
+            <a href="https://wa.me/5592992112443" target="_blank"><img src="src/images/loja/produto1.jpg"
                     alt="camiseta cz92">
                 <div class="informacoes">
                     <h3 class="preco">
@@ -78,7 +85,7 @@
 
         </div>
         <div class="produto">
-            <a href="https://wa.me/5592992112443" target="_blank"><img src="{% static '/src/images/loja/produto2.jpg' %}"
+            <a href="https://wa.me/5592992112443" target="_blank"><img src="src/images/loja/produto2.jpg"
                     alt="moletom cz92">
                 <div class="informacoes">
                     <h3 class="preco">
@@ -89,7 +96,7 @@
 
         </div>
         <div class="produto">
-            <a href="https://wa.me/5592992112443" target="_blank"><img src="{% static '/src/images/loja/produto3.jpg' %}"
+            <a href="https://wa.me/5592992112443" target="_blank"><img src="src/images/loja/produto3.jpg"
                     alt="camiseta da banda modelo garantido">
                 <div class="informacoes">
                     <h3 class="preco">
@@ -100,7 +107,7 @@
 
         </div>
         <div class="produto">
-            <a href="https://wa.me/5592992112443" target="_blank"> <img src="{% static '/src/images/loja/produto4.jpg' %}"
+            <a href="https://wa.me/5592992112443" target="_blank"> <img src="src/images/loja/produto4.jpg"
                     alt="camiseta da banda modelo caprishoso">
                 <div class="informacoes">
                     <h3 class="preco">
@@ -112,7 +119,7 @@
         </div>
 
         <div class="produto">
-            <a href="https://wa.me/5592992112443" target="_blank"> <img src="{% static '/src/images/loja/produto5.jpg' %}"
+            <a href="https://wa.me/5592992112443" target="_blank"> <img src="src/images/loja/produto5.jpg"
                     alt="boton cz92">
                 <div class="informacoes">
                     <h3 class="preco">
@@ -124,7 +131,7 @@
         </div>
 
         <div class="produto">
-            <a href="https://wa.me/5592992112443" target="_blank"> <img src="{% static '/src/images/loja/bone.jpg' %}"
+            <a href="https://wa.me/5592992112443" target="_blank"> <img src="src/images/loja/bone.jpg"
                     alt="boton cz92">
                 <div class="informacoes">
                     <h3 class="preco">
@@ -142,120 +149,117 @@
 
         
         <div class="disco">
-            <a href="#"><img class="capa" src="{% static '/src/images/tropical.jpg' %}" alt="Tropical"></a>
+            <a href="#"><img class="capa" src="src/images/tropical.jpg" alt="Tropical"></a>
             <div class="titulo">
                 <h3>Tropical Sideral</h3>
             </div>
             <div class="audio">
-                <audio src="{% static '/src/music/tropical.mp3' %}" controls></audio>
+                <audio src="src/music/tropical.mp3" controls></audio>
             </div>
             <a class="link" href="https://open.spotify.com/album/4tMUe1AdStz72fZNYVBHss" target="_blank">Ouça completo
                 aqui</a>
         </div>
         
         <div class="disco">
-            <a href="#"><img class="capa" src="{% static '/src/images/arma.jpg' %}" alt="Arma"></a>
+            <a href="#"><img class="capa" src="src/images/arma.jpg" alt="Arma"></a>
             <div class="titulo">
                 <h3>Arma</h3>
             </div>
             <div class="audio">
-                <audio src="{% static '/src/music/arma.mp3' %}" controls></audio>
+                <audio src="src/music/arma.mp3" controls></audio>
             </div>
             <a class="link" href="https://open.spotify.com/track/0EolhwBweYO7ow3OJnQc2a" target="_blank">Ouça completo
                 aqui</a>
         </div>
         
         <div class="disco">
-            <a href="#"><img class="capa" src="{% static '/src/images/juma.jpg' %}" alt="Juma"></a>
+            <a href="#"><img class="capa" src="src/images/juma.jpg" alt="Juma"></a>
             <div class="titulo">
                 <h3>Juma</h3>
             </div>
             <div class="audio">
-                <audio src="{% static '/src/music/juma.mp3' %}" controls></audio>
+                <audio src="src/music/juma.mp3" controls></audio>
             </div>
             <a class="link" href="https://open.spotify.com/album/5uGv5sja2ZTdrkIdBTMT8X?si=RCvmr7pmShCbNTILPami_w" target="_blank">Ouça completo
                 aqui</a>
         </div>
 
         <div class="disco">
-            <a href="#"><img class="capa" src="{% static '/src/images/cadente.jpg' %}" alt="Cadente"></a>
+            <a href="#"><img class="capa" src="src/images/cadente.jpg" alt="Cadente"></a>
             <div class="titulo">
                 <h3>Cadente</h3>
             </div>
             <div class="audio">
-                <audio src="{% static '/src/music/cadente.mp3' %}" controls></audio>
+                <audio src="src/music/cadente.mp3" controls></audio>
             </div>
             <a class="link" href="https://open.spotify.com/track/2Y7UKZEPRfvZDP5zemaVcY" target="_blank">Ouça completo
                 aqui</a>
         </div>
 
-
-
-
         <div class="disco">
-            <a href="#"><img class="capa" src="{% static '/src/images/tupa.jpg' %}" alt="Tupã"></a>
+            <a href="#"><img class="capa" src="src/images/tupa.jpg" alt="Tupã"></a>
             <div class="titulo">
                 <h3>Tupã</h3>
             </div>
             <div class="audio">
-                <audio src="{% static '/src/music/tupa.mp3' %}" controls></audio>
+                <audio src="src/music/tupa.mp3" controls></audio>
             </div>
             <a class="link" href="https://open.spotify.com/track/5hKhFEY15aiyZw6Ox0zDtI" target="_blank">Ouça completo
                 aqui</a>
         </div>
 
         <div class="disco">
-            <a href="#"><img class="capa" src="{% static '/src/images/alodeus.jpg' %}" alt="Alo deus"></a>
+            <a href="#"><img class="capa" src="src/images/alodeus.jpg" alt="Alo deus"></a>
             <div class="titulo">
                 <h3>Alô, Deus?</h3>
             </div>
             <div class="audio">
-                <audio src="{% static '/src/music/alodeus.mp3' %}" controls></audio>
+                <audio src="src/music/alodeus.mp3" controls></audio>
             </div>
             <a class="link" href="https://open.spotify.com/album/4tMUe1AdStz72fZNYVBHss" target="_blank">Ouça completo
                 aqui</a>
         </div>
         <div class="disco">
-            <a href="#"><img class="capa" src="{% static '/src/images/quatroparedes.jpg' %}" alt="Quatro Paredes"></a>
+            <a href="#"><img class="capa" src="src/images/quatroparedes.jpg" alt="Quatro Paredes"></a>
             <div class="titulo">
                 <h3>Quatro Paredes</h3>
             </div>
             <div class="audio">
-                <audio src="{% static '/src/music/veju.mp3' %}" controls></audio>
+                <audio src="src/music/veju.mp3" controls></audio>
             </div>
             <a class="link" href="https://open.spotify.com/album/3e50nUY57QHQ6ceNsdT5fZ" target="_blank">Ouça completo
                 aqui</a>
         </div>
         <div class="disco">
-            <a href="#"><img class="capa" src="{% static '/src/images/aniquilacao.jpg' %}" alt="Aniquilação"></a>
+            <a href="#"><img class="capa" src="src/images/aniquilacao.jpg" alt="Aniquilação"></a>
             <div class="titulo">
                 <h3>Aniquilação</h3>
             </div>
             <div class="audio">
-                <audio src="{% static '/src/music/aliens.mp3' %}" controls></audio>
+                <audio src="src/music/aliens.mp3" controls></audio>
             </div>
             <a class="link" href="https://open.spotify.com/album/2hOSDyEf8RKbnweQbcRTLT" target="_blank">Ouça completo
                 aqui</a>
         </div>
         <div class="disco">
-            <a href="#"><img class="capa" src="{% static '/src/images/cidadedaspalhas.jpg' %}"
+            <a href="#"><img class="capa" src="src/images/cidadedaspalhas.jpg"
                     alt="Cidade das Palhas"></a>
             <div class="titulo">
                 <h3>Cidade das Palhas</h3>
             </div>
             <div class="audio">
-                <audio src="{% static '/src/music/alvoradarockstar.mp3' %}" controls></audio>
+                <audio src="src/music/alvoradarockstar.mp3" controls></audio>
             </div>
             <a class="link" href="https://open.spotify.com/album/3VDwaKhFBrLQ7ajdXXue9u" target="_blank">Ouça completo
                 aqui</a>
         </div>
         <div class="disco">
-            <a href="#"><img class="capa" src="{% static '/src/images/maisumtempo.jpg' %}" alt="Bela Época"></a>
+            <a href="#"><img class="capa" src="src/images/maisumtempo.jpg" alt="Bela Época"></a>
             <div class="titulo">
                 <h3>Bela Época</h3>
             </div>
             <div class="audio">
-                <audio src="{% static '/src/music/maisumtempo.mp3' %}" controls></audio>
+                <audio src="src/music/maisumtempo.mp3" controls></audio>
             </div>
             <a class="link"
                 href="https://open.spotify.com/album/5GwI5hGWI4wnrRbC9d6txp?highlight=spotify:track:3i6CokjOfjguobniq2p6nV"
@@ -310,11 +314,6 @@
                 allowfullscreen></iframe>
 
             <br>
-
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/uqeUOCwQdIA"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe> -->
                 <br>
                 <button class="voltarDiscografia">Voltar</button>
 
@@ -384,7 +383,6 @@
             </ul>
             <br>
 
-
             <iframe width="560" height="315" src="https://www.youtube.com/embed/WlsECX_iYkU"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -418,10 +416,14 @@
     <section class="discodesc tupa-container info-disco">
         <div class="sobredisco">
             <h1>Tupã</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Ipsam aperiam unde iste consectetur repellat, 
-                maiores atque sapiente amet rem voluptate ratione 
-                est optio illo odio mollitia saepe illum vel dolorum!
+            <p>“Tupã”, single da Conduta Zero 92 em conjunto com o duo Um Trevo,
+                 busca criar uma revolução sonora através da união do DNA tradicional 
+                 de rock e rap da banda a elementos amazônicos, abraçando as raízes de
+                  nossa terra e agregando estéticas folclóricas e tribais a elementos futuristas, 
+                  permeados por riffs criativos, empolgantes e pesados. Este lançamento visa 
+                  realizar um resgate do rock amazonense, encorpando o seu som e mostrando o 
+                  quão autêntico este pode ser se for unido a grande gama de possibilidades 
+                  que os estilos nortistas oferecem, como por exemplo o boi-bumbá. 
             </p>
             <br>
             <button class="voltarDiscografia">Voltar</button>
@@ -431,10 +433,10 @@
     <section class="discodesc cadente-container info-disco">
         <div class="sobredisco">
             <h1>Cadente</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Ipsam aperiam unde iste consectetur repellat, 
-                maiores atque sapiente amet rem voluptate ratione 
-                est optio illo odio mollitia saepe illum vel dolorum!
+            <p>“Cadente", single natalino da Conduta Zero 92 em conjunto com Santaella, 
+                aborda o lado mais emocional da banda, que reflete sobre perdas de entes 
+                queridos sem abrir mão da esperança de dias melhores. Esta canção foi composta 
+                como um afago a todos que buscam uma maneira de superar seu luto.
             </p>
             <br>
             <button class="voltarDiscografia">Voltar</button>
@@ -444,10 +446,11 @@
     <section class="discodesc juma-container info-disco">
         <div class="sobredisco">
             <h1>Juma</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Ipsam aperiam unde iste consectetur repellat, 
-                maiores atque sapiente amet rem voluptate ratione 
-                est optio illo odio mollitia saepe illum vel dolorum!
+            <p>“Juma” é a continuidade na revolução sonora de rock tribal e hip-hop proposta pela Conduta Zero 92. 
+                O resultado desse mix remonta aos tempos de um rock mais autêntico e desafiador, como aquele proposto
+                 por nomes como Chico Science, Charlie Brown Jr. e Planet Hemp, porém, assim como estes nomes agregaram
+                  a influência de seus entornos à sua obra, a Conduta agrega um DNA sonoro que apenas um coletivo enraizado
+                   no coração da Amazônia poderia obter.
             </p>
             <br>
             <button class="voltarDiscografia">Voltar</button>
@@ -492,131 +495,131 @@
     <section class="conteudo fotos-container">
         <div class="galeria">
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/showlivre10.png' %}" alt="foto1">
+                <img src="src/images/Galeria/showlivre10.png" alt="foto1">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/foto2.jpg' %}" alt="foto2">
+                <img src="src/images/Galeria/foto2.jpg" alt="foto2">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/foto3.png' %}" alt="foto3">
+                <img src="src/images/Galeria/foto3.png" alt="foto3">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/foto4.png' %}" alt="foto4">
+                <img src="src/images/Galeria/foto4.png" alt="foto4">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/foto7.png' %}" alt="foto7">
+                <img src="src/images/Galeria/foto7.png" alt="foto7">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/foto11.png' %}" alt="foto11">
+                <img src="src/images/Galeria/foto11.png" alt="foto11">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/showlivre1.png' %}" alt="showlivre1">
+                <img src="src/images/Galeria/showlivre1.png" alt="showlivre1">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/showlivre2.png' %}" alt="showlivre2">
+                <img src="src/images/Galeria/showlivre2.png" alt="showlivre2">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/showlivre3.png' %}" alt="showlivre3">
+                <img src="src/images/Galeria/showlivre3.png" alt="showlivre3">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/showlivre4.png' %}" alt="showlivre4">
+                <img src="src/images/Galeria/showlivre4.png" alt="showlivre4">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/showlivre5.png' %}" alt="showlivre5">
+                <img src="src/images/Galeria/showlivre5.png" alt="showlivre5">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/showlivre6.png' %}" alt="showlivre6">
+                <img src="src/images/Galeria/showlivre6.png" alt="showlivre6">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/showlivre7.png' %}" alt="showlivre7">
+                <img src="src/images/Galeria/showlivre7.png" alt="showlivre7">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/showlivre8.png' %}" alt="showlivre8">
+                <img src="src/images/Galeria/showlivre8.png" alt="showlivre8">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/showlivre9.png' %}" alt="showlivre9">
+                <img src="src/images/Galeria/showlivre9.png" alt="showlivre9">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/foto1.jpg' %}" alt="showlivre10">
+                <img src="src/images/Galeria/foto1.jpg" alt="showlivre10">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/foto6.png' %}" alt="foto6">
+                <img src="src/images/Galeria/foto6.png" alt="foto6">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/foto8.png' %}" alt="foto8">
+                <img src="src/images/Galeria/foto8.png" alt="foto8">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/foto9.png' %}" alt="foto9">
+                <img src="src/images/Galeria/foto9.png" alt="foto9">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/foto10.png' %}" alt="foto10">
+                <img src="src/images/Galeria/foto10.png" alt="foto10">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/foto12.png' %}" alt="foto12">
+                <img src="src/images/Galeria/foto12.png" alt="foto12">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/foto14.png' %}" alt="foto14">
+                <img src="src/images/Galeria/foto14.png" alt="foto14">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/foto15.png' %}" alt="foto15">
+                <img src="src/images/Galeria/foto15.png" alt="foto15">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/foto16.png' %}" alt="foto16">
+                <img src="src/images/Galeria/foto16.png" alt="foto16">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/foto17.png' %}" alt="foto17">
+                <img src="src/images/Galeria/foto17.png" alt="foto17">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/foto18.png' %}" alt="foto18">
+                <img src="src/images/Galeria/foto18.png" alt="foto18">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/foto19.png' %}" alt="foto19">
+                <img src="src/images/Galeria/foto19.png" alt="foto19">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/foto20.png' %}" alt="foto20">
+                <img src="src/images/Galeria/foto20.png" alt="foto20">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/foto21.png' %}" alt="foto21">
+                <img src="src/images/Galeria/foto21.png" alt="foto21">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/foto22.png' %}" alt="foto22">
+                <img src="src/images/Galeria/foto22.png" alt="foto22">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/foto24.png' %}" alt="foto24">
+                <img src="src/images/Galeria/foto24.png" alt="foto24">
             </a>
 
             <a href="#" class="foto">
-                <img src="{% static '/src/images/Galeria/foto25.png' %}" alt="foto25">
+                <img src="src/images/Galeria/foto25.png" alt="foto25">
             </a>
         </div>
         <footer class="agradecimentos">
@@ -629,118 +632,97 @@
 
     <section class="conteudo carrossel-container">
         <div id="setavoltar" class="seta setavoltar opacidade">
-            <img src="{% static '/src/images/seta.png' %}" alt="seta para voltar">
+            <img src="src/images/seta.png" alt="seta para voltar">
         </div>
         <div class="slide">
-
-            <img class="foto-carrossel fotoativa"src="{% static '/src/images/showlivre10.png' %}" alt="foto1">
-            <img class="foto-carrosel" src="{% static '/src/images/foto2.jpg' %}" alt="foto2">
-            <img class="foto-carrosel" src="{% static '/src/images/foto3.png' %}" alt="foto3">
-            <img class="foto-carrosel" src="{% static '/src/images/foto4.png' %}" alt="foto4">
-            <img class="foto-carrosel" src="{% static '/src/images/foto7.png' %}" alt="foto7">
-            <img class="foto-carrosel" src="{% static '/src/images/foto11.png' %}" alt="foto11">
-            <img class="foto-carrosel" src="{% static '/src/images/showlivre1.png' %}" alt="showlivre1">
-            <img class="foto-carrosel" src="{% static '/src/images/showlivre2.png' %}" alt="showlivre2">
-            <img class="foto-carrosel" src="{% static '/src/images/showlivre3.png' %}" alt="showlivre3">
-            <img class="foto-carrosel" src="{% static '/src/images/showlivre4.png' %}" alt="showlivre4">
-            <img class="foto-carrosel" src="{% static '/src/images/showlivre5.png' %}" alt="showlivre5">
-            <img class="foto-carrosel" src="{% static '/src/images/showlivre6.png' %}" alt="showlivre6">
-            <img class="foto-carrosel" src="{% static '/src/images/showlivre7.png' %}" alt="showlivre7">
-            <img class="foto-carrosel" src="{% static '/src/images/showlivre8.png' %}" alt="showlivre8">
-            <img class="foto-carrosel" src="{% static '/src/images/showlivre9.png' %}" alt="showlivre9">
-            <img class="foto-carrosel" src="{% static '/src/images/foto1.jpg' %}" alt="showlivre10">
-            <img class="foto-carrosel" src="{% static '/src/images/foto6.png' %}" alt="foto6">
-            <img class="foto-carrosel" src="{% static '/src/images/foto8.png' %}" alt="foto8">
-            <img class="foto-carrosel" src="{% static '/src/images/foto9.png' %}" alt="foto9">
-            <img class="foto-carrosel" src="{% static '/src/images/foto10.png' %}" alt="foto10">
-            <img class="foto-carrosel" src="{% static '/src/images/foto12.png' %}" alt="foto12">
-            <img class="foto-carrosel" src="{% static '/src/images/foto14.png' %}" alt="foto14">
-            <img class="foto-carrosel" src="{% static '/src/images/foto15.png' %}" alt="foto15">
-            <img class="foto-carrosel" src="{% static '/src/images/foto16.png' %}" alt="foto16">
-            <img class="foto-carrosel" src="{% static '/src/images/foto17.png' %}" alt="foto17">
-            <img class="foto-carrosel" src="{% static '/src/images/foto18.png' %}" alt="foto18">
-            <img class="foto-carrosel" src="{% static '/src/images/foto19.png' %}" alt="foto19">
-            <img class="foto-carrosel" src="{% static '/src/images/foto20.png' %}" alt="foto20">
-            <img class="foto-carrosel" src="{% static '/src/images/foto21.png' %}" alt="foto21">
-            <img class="foto-carrosel" src="{% static '/src/images/foto22.png' %}" alt="foto22">
-            <img class="foto-carrosel" src="{% static '/src/images/foto24.png' %}" alt="foto24">
-            
+            <img class="foto-carrossel fotoativa"src="src/images/showlivre10.png" alt="foto1">
+            <img class="foto-carrosel" src="src/images/foto2.jpg" alt="foto2">
+            <img class="foto-carrosel" src="src/images/foto3.png" alt="foto3">
+            <img class="foto-carrosel" src="src/images/foto4.png" alt="foto4">
+            <img class="foto-carrosel" src="src/images/foto7.png" alt="foto7">
+            <img class="foto-carrosel" src="src/images/foto11.png" alt="foto11">
+            <img class="foto-carrosel" src="src/images/showlivre1.png" alt="showlivre1">
+            <img class="foto-carrosel" src="src/images/showlivre2.png" alt="showlivre2">
+            <img class="foto-carrosel" src="src/images/showlivre3.png" alt="showlivre3">
+            <img class="foto-carrosel" src="src/images/showlivre4.png" alt="showlivre4">
+            <img class="foto-carrosel" src="src/images/showlivre5.png" alt="showlivre5">
+            <img class="foto-carrosel" src="src/images/showlivre6.png" alt="showlivre6">
+            <img class="foto-carrosel" src="src/images/showlivre7.png" alt="showlivre7">
+            <img class="foto-carrosel" src="src/images/showlivre8.png" alt="showlivre8">
+            <img class="foto-carrosel" src="src/images/showlivre9.png" alt="showlivre9">
+            <img class="foto-carrosel" src="src/images/foto1.jpg" alt="showlivre10">
+            <img class="foto-carrosel" src="src/images/foto6.png" alt="foto6">
+            <img class="foto-carrosel" src="src/images/foto8.png" alt="foto8">
+            <img class="foto-carrosel" src="src/images/foto9.png" alt="foto9">
+            <img class="foto-carrosel" src="src/images/foto10.png" alt="foto10">
+            <img class="foto-carrosel" src="src/images/foto12.png" alt="foto12">
+            <img class="foto-carrosel" src="src/images/foto14.png" alt="foto14">
+            <img class="foto-carrosel" src="src/images/foto15.png" alt="foto15">
+            <img class="foto-carrosel" src="src/images/foto16.png" alt="foto16">
+            <img class="foto-carrosel" src="src/images/foto17.png" alt="foto17">
+            <img class="foto-carrosel" src="src/images/foto18.png" alt="foto18">
+            <img class="foto-carrosel" src="src/images/foto19.png" alt="foto19">
+            <img class="foto-carrosel" src="src/images/foto20.png" alt="foto20">
+            <img class="foto-carrosel" src="src/images/foto21.png" alt="foto21">
+            <img class="foto-carrosel" src="src/images/foto22.png" alt="foto22">
+            <img class="foto-carrosel" src="src/images/foto24.png" alt="foto24">
+            <button class="voltarCarrosel">Voltar</button>
         </div>
-
         <div id="setaavancar" class="seta setaavancar">
-            <img src="{% static '/src/images/seta.png' %}" alt="seta para avançar">
+            <img src="src/images/seta.png" alt="seta para avançar">
         </div>
     </div>
-
     </section>
 
     <section class="conteudo contato-container">
+            <form action="/" method="POST" class="formulario">
+                
+                <div class="label-input">
+                    <label class="labelNome" for="nome"><strong>Nome:</strong></label>
+                    <input type="text"  placeholder="Digite seu nome aqui"  name="name" id="nome" class="campo campoNome" >
+                </div>
+                <br>
+                
+                <br>
+                <div class="label-input">
+                    <label class="labelEmail" for="email" ><strong>E-mail:</strong></label>
+                    <input type="text" placeholder="Digite seu e-mail aqui"  name="email" id="email" class="campo campoEmail" >
+                </div>
+                <br>
+                <div class="divCampoData">
+                    <label class="labelData" for="Data"><strong>Data de nascimento:</strong></label>
+                    <input type="date" name="name" id="data" class="campodata" >
+                </div>
+                <div class="divBotao ">
+                    <button class="botao" onclick="ingresso(event)" type="submit"><b>Enviar</b></button>
+                </div>
 
-        <!-- <div>
-            <div class="contato-imagem">
-                <img src="./src/images/showlivre10.png" alt="">
-
-            </div>
-         -->
-         <form action="" method="POST" class="formulario">
-            <!-- action="https://api.staticforms.xyz/submit" method="POST" -->
-            <!-- <input type="hidden" name="accessKey" value="6a3012d9-648b-4396-b83d-d84baf833bb1">
-            <input type="hidden" name="redirectTo" value="https://www.condutazero92.com.br%22%3E/ -->
-            {% csrf_token %}
-
-
-            <div class="label-input">
-                {{form.name.label}}
-                {{form.name}}
-            </div>
-            <br>
-
-            <br>
-            <div class="label-input">
-                {{form.email.label}}
-                {{form.email}}
-            </div>
-            <br>
-            <div class="divCampoData">
-                {{form.birth_date.label}}
-                {{form.birth_date}}
-            </div>
-            <div class="divBotao ">
-                <button class="botao" onclick="ingresso(event)" type="submit"><b>Enviar</b></button>
-            </div>
-
-            <div class="agradecimento esconder">
-                <p>Obrigado por fazer parte disso.</p>
-            </div>
-
-        </form>
-
-        <!-- </div> -->
-
-        
+                <div class="agradecimento esconder">
+                    <p>Obrigado por fazer parte disso.</p>
+                </div>
+                
+            </form>
     </section>
 
-
     <section class="conteudo jogo-container">
-
         <div class="game">
-            <audio class="audioGame"  autoplay ></audio>
+            <audio class="audioGame" autoplay ></audio>
             <audio class="audioGameFalhou" autoplay ></audio>
             <div class="select-caracter">
                 <h2 class="tituloPersonagem">Selecione seu personagem</h2>
-                <div class="card-caracter selecionado"><img src="{% static '/src/images/jogo/cardlacruz.jpg' %}"></div>
-                <div class="card-caracter"><img src="{% static '/src/images/jogo/cardrafael.jpg' %}"></div>
-                <div class="card-caracter"><img src="{% static '/src/images/jogo/cardleo.jpg' %}"></div>
-                <div class="card-caracter"><img src="{% static '/src/images/jogo/cardpedro.jpg' %}"></div>
-                <div class="card-caracter cardNovoPersonagem"><img src="{% static '/src/images/jogo/cardleo.jpg' %}"></div>
+                <div class="card-caracter selecionado"><img src="./src/images/jogo/cardlacruz.jpg"></div>
+                <div class="card-caracter"><img src="./src/images/jogo/cardrafael.jpg"></div>
+                <div class="card-caracter"><img src="./src/images/jogo/cardleo.jpg"></div>
+                <div class="card-caracter"><img src="./src/images/jogo/cardpedro.jpg"></div>
+                <div class="card-caracter cardNovoPersonagem"><img src="./src/images/jogo/cardleo.jpg"></div>
                 <div class="divMapas">
                     <h3>Escolha um local</h3>
-                    <img class="setaMapa opacidade setaMapaAnterior" src="{% static '/src/images/seta.png' %}" alt="">
-                    <img class="setaMapa setaProximoMapa" src="{% static '/src/images/seta.png' %}" alt="">
+                    <img class="setaMapa opacidade setaMapaAnterior" src="./src/images/seta.png" alt="">
+                    <img class="setaMapa setaProximoMapa" src="./src/images/seta.png" alt="">
                     
-                    <img class="mapa mapa1 mostrarMapa" src="{% static '/src/images/jogo/primeiroMapa.png' %}" alt="">
-                    <img class="mapa mapa2" src="{% static '/src/images/jogo/segundoMapa.jpg' %}" alt="">
-                    <img class="mapa mapa3" src="{% static '/src/images/jogo/terceiroMapa.jpg' %}" alt="">
+                    <img class="mapa mapa1 mostrarMapa" src="./src/images/jogo/primeiroMapa.png" alt="">
+                    <img class="mapa mapa2" src="./src/images/jogo/segundoMapa.jpg" alt="">
+                    <img class="mapa mapa3" src="./src/images/jogo/terceiroMapa.jpg" alt="">
                 </div>
                 <div class="ranking">
                     <h3>Ranking</h3>
@@ -775,8 +757,13 @@
                 </div>
             </div>
             
+            <div class=" turnYourPhone">
+                <h2 >Para jogar vire seu celular.</h2>
+                <img class="turnYourPhoneImg" src="./src/images/jogo/turnyourphone.gif" alt="turnYourPhone">
+            </div>
             <div class="game-board">
-                <p class="contador">0</p>
+                <img class="imgPlayPause" onclick="audioPlayPause()" src="./src/images/jogo/imgPlayPause.png" alt="">
+                <p class="contador"></p>
                 <div class="divBotaoReset">
                     <div class="button botaoReset">
                         <a href="#">Restart</a>
@@ -784,38 +771,39 @@
                 </div>
                 <h2 class="msgNovoPersonagem">Novo personagem desbloqueado!</h2>
                 <h2 class="start" onclick="startGame()">Start</h2>
+                <div class="tutorial">
+                    <h3>Mini Tutorial</h3>
+                    <p>Para pular cutuque o personagem.</p>
+                    <p>Clique no disquete para salvar score.</p>
+                </div>
                 <div class="divBotaoTrocarPersonagem">
                     <div class="botaoTrocarPersonagem trocarPersonagem">
                         <a href="#">Escolher outro personagem</a>
                     </div>
                 </div>
-                <img  class='personagem' src="{% static '/src/images/jogo/personagemleo.jpg' %}" alt="">
-                <img  class='obstaculo'src="{% static '/src/images/jogo/obstaculoleo.png' %}" alt="">
+                <img  class='personagem' src="./src/images/jogo/personagemleo.jpg" alt="">
+                <img  class='obstaculo'src="./src/images/jogo/obstaculoleo.png" alt="">
                 <audio src=""></audio>
-                <img onclick="salvarGame()" class="disqueteSalvar" src="{% static '/src/images/jogo/disqueteSalva.png' %}" alt="">
+                <img onclick="salvarGame()" class="disqueteSalvar" src="./src/images/jogo/disqueteSalva.png" alt="">
             </div>
     
 
 
         </div>
 
-        
-        <!-- <button class="botaoPular">Pular</button> -->
+
 
 
 
     </section>
 
-    
-    <script src="{% static '/src/js/carrossel.js' %}"></script>
-    <script src="{% static '/src/js/animacao.js' %}"></script>
-    <script src="{% static '/src/js/contato.js' %}"></script>
-    <!-- <script src="./db.js"></script>
-    <script src="./aplicativo.js"></script> -->
-    <script src="{% static '/src/js/jogo.js' %}"></script>
-    <script src="{% static '/src/js/animacaoSelecionarPersonagem.js' %}"></script>
 
 
+    <script src="src/js/carrossel.js"></script>
+    <script src="src/js/animacao.js"></script>
+    <script src="src/js/contato.js"></script>
+    <script src="src/js/jogo.js"></script>
+    <script src="src/js/animacaoSelecionarPersonagem.js"></script>
 </body>
 
 </html>

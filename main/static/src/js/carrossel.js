@@ -1,6 +1,9 @@
 const setaVoltar = document.getElementById("setavoltar");
 const setaAvancar = document.getElementById("setaavancar");
 const fotosCarrossel = document.getElementsByClassName("foto-carrosel")
+const voltarCarrosel = document.querySelector('.voltarCarrosel')
+
+
 
 let imagemAtual = 0;
 
@@ -51,3 +54,8 @@ function mostrarOuEsconderSetas() {
     setaAvancar.classList.remove("opacidade");
   }
 }
+
+voltarCarrosel.addEventListener('click', function(){
+    containers[4].classList.remove("mostrar")
+    containers[3].classList.add("mostrar")
+})

@@ -28,19 +28,12 @@
     width: 100px;
     right: 200px;
     animation: obstaculo-animation 1.5s infinite linear;
-    /* border: 1px solid red; */
- 
   }
 
   .personagem {
     width:150px;
     position: absolute;
     bottom: 0;
-
-    /* border: 1px solid black; */
-    
-   
-    
   }
 
   .jump{
@@ -56,9 +49,7 @@
 
     to{
         right: 100%;
-
     }
-    
   }
 
 
@@ -70,9 +61,7 @@
 
     to{
         right: 100%;
-
-    }
-    
+    }   
   }
 
   @keyframes obstaculo-velocidadeaumentada {
@@ -83,9 +72,7 @@
 
     to{
         right: 100%;
-
-    }
-    
+    }  
   }
 
   @keyframes obstaculo-animation {
@@ -95,10 +82,8 @@
     }
 
     to{
-        right: 100%;
-
-    }
-    
+        right: 100% ;  
+    }  
   }
 
   @keyframes jump {
@@ -179,9 +164,9 @@
   }
 
   .game{
-
     width: 100%;
   }
+
   .jogo-container{
     display:flex;
     justify-content: center;
@@ -191,7 +176,6 @@
   }
 
   .card-caracter{
-    border: 1px pink solid;
     width: 200px;
     height: 200px;
     cursor: pointer;
@@ -566,4 +550,45 @@ td{
     transform: rotateY(0);
   }
   
+}
+
+.turnYourPhone{
+  display: none;
+}
+
+.imgPlayPause{
+  background-color: white;
+  border-radius: 50px;
+  border: 2px solid white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.imgPlayPause{
+  display: none;
+}
+
+.tutorial{
+  height: 100px;
+  background-color: black;
+  width: 300px;
+  text-align: center;
+  color: white;
+  font-family: 'arcadeFont';
+  letter-spacing: 3px;
+  font-size: 12px;
+  position: absolute;
+  top: 200px;
+  margin: auto;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  align-items: center;
+
 }

@@ -14,19 +14,19 @@
 
 .home-container {
   min-height: 80vh;
-  animation: debaixoparacima 0.5s;
+  /* animation: debaixoparacima 0.5s; */
 }
 
 .icones {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  width: 100%;
-  gap: 15px;
-}
-
-.icon {
-  margin-bottom: 10px;
+  justify-content: space-around;
+  flex-direction: row;
+  /* align-items: center; */
+  width: 300px;
+  /* gap: 15px; */
+  position: absolute;
+  bottom: 20px;
+  /* border: orange 2PX SOLID; */
 }
 
 .home-container {
@@ -35,7 +35,29 @@
 
 .home-container.mostrar {
   display: flex;
+  flex-direction: column;
+  /* border: 1px solid white; */
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
+
+.imgHome{
+  width: 500px;
+  text-align: center;
+  /* margin-right: 50px; */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.youtubeHome{
+  border: 2px solid white;
+  border-radius: 10px;
+
+}
+
+
 
 /* LOJA */
 

@@ -1,9 +1,35 @@
+@media(max-width: 1000px){
+
+  .imgHome{
+    width: 250px;
+
+  }
+
+  .youtubeHome{
+    height: 150px;
+    width: 250px;
+    position: absolute;
+    top: 150px;
+  }
+}
+
 @media (max-width: 650px) {
   body {
+    background: url(../images/bgResponsivoHome.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
 
+  .backgroundHome{
+    background: url(../images/bgResponsivoHome.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .background{
     background: url(../images/bgResponsivo.jpg) no-repeat center;
     background-size: cover;
-     background-attachment: fixed;
+    background-attachment: fixed;
   }
 
   /* Menu */
@@ -195,9 +221,7 @@ nav li{
     border: 2px solid green
   } */
 
-  .icones {
-    position: relative;
-  }
+  
 
   .home-container {
     min-height: 100vh;
@@ -219,6 +243,14 @@ nav li{
     transition: 0.5s ease-in-out;
   }
 
+  .youtubeHome{
+    height: 150px;
+    width: 250px;
+    position: absolute;
+    top: 150px;
+  }
+
+  
 
 
   /* Discografia */
@@ -292,6 +324,37 @@ nav li{
   }
   input::placeholder{
     color:white;
+  }
+
+  .home-container{
+    min-height: 100vw;
+  }
+
+ 
+  .imgHome{
+    width: 350px;
+    position: absolute;
+    bottom: -100px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    display: none;
+  }
+
+  .icones{
+    position:absolute;
+    bottom: 25px;
+    width: 250px;
+    /* border: 1px solid black; */
+    bottom: 40px;
+  }
+
+  .divHome{
+    border: 1px solid white;
+  }
+
+  .imgIcon{
+    width: 50px;
   }
 
 }

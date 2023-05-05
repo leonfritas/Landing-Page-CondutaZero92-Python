@@ -1,0 +1,205 @@
+.esconderTurnYourPhone{
+    display: none;
+}
+
+.mostrarTurnYourPhone{
+    display: block;
+
+}
+
+
+@media(max-width: 1270px){
+
+    .botaoTrocarPersonagem a{
+        font-size: 10px;
+        width: 100px;   
+    }
+
+    .botaoTrocarPersonagem{
+        right: 0;
+    }
+    .cabecalho{
+        justify-content: space-around;
+        gap: 100px;
+    }
+    
+    .menu{
+        gap: 15px;
+        font-size: 20px;
+    }
+
+    .game-board{
+        height: 400px;
+        margin-top: 20px;
+        
+        /* height: 100vh; */
+    }
+
+    .divMapas{
+        position: absolute;
+        margin: auto;
+        right: 0;
+        left: 0;
+        width: 200px;
+        height: 150px;
+        bottom: 0;
+        
+    }
+
+    .divMapas h3{
+        top: -40px;
+    }
+
+    .setaMapa{
+        width: 30px;
+        cursor: pointer;
+        position: absolute;
+        bottom: 50px;
+    }
+
+    .ranking{
+        position:absolute;
+        bottom: -150px;
+        margin: auto;
+        right: 0;
+        left: 0;
+        width: 300px;
+        height: 100px;
+    }
+
+    .select-caracter{
+        
+        justify-content: space-evenly;
+        height: 400px;
+        gap: 10px;
+
+        position: relative;
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+
+    .select-caracter h2{
+        text-align: center;
+        font-size: 25px;
+        top: -70px;
+    }
+
+    .card-caracter{
+        border: 1px pink solid;
+        width: 150px;
+        height: 150px;
+        cursor: pointer;  
+    }
+      
+    .card-caracter img{
+        width: 100%;
+    }
+
+    .turnYourPhone{
+        display: none;
+    }
+    .turnYourPhoneImg{
+        display: none;
+    }
+
+}
+
+@media(max-width: 460px){
+    .jogo-container{
+        margin: 0 0 0 0;
+
+    }
+
+    .divMapas{
+        position: absolute;
+        margin: auto;
+        right: 0;
+        left: 0;
+        width: 200px;
+        height: 150px;
+        bottom: -200px;
+    }
+
+    .divMapas h3{
+        top: -40px;
+    }
+
+    .setaMapa{
+        width: 30px;
+        cursor: pointer;
+        position: absolute;
+        bottom: 50px;
+    }
+
+    .ranking{
+        position:absolute;
+        bottom: -350px;
+        margin: auto;
+        right: 0;
+        left: 0;
+        width: 300px;
+        height: 100px;
+    }
+
+    .select-caracter{
+        
+        justify-content: space-evenly;
+        height: 400px;
+        gap: 10px;
+
+        position: relative;
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+
+    .select-caracter h2{
+        text-align: center;
+        font-size: 25px;
+        top: -70px;
+    }
+
+    .card-caracter{
+        border: 1px pink solid;
+        width: 150px;
+        height: 150px;
+        cursor: pointer;
+       
+    }
+      
+    .card-caracter img{
+        width: 100%;
+    }
+
+     .game-board{
+        height: 0;
+        width: 0;  
+    }
+
+    .turnYourPhone{
+        position: absolute;
+        margin: auto;
+        top: 200px;
+        right: 0;
+        left: 0;
+        color: white;
+        text-align: center;
+        /* display: block; */
+      
+    }
+    
+    .turnYourPhoneImg{
+        margin-top: 50px;
+        text-align: center;
+        width: 150px;
+        position: absolute; 
+        right: 0;
+        left: 0;
+        margin: auto;
+        margin-top: 50px;
+        display: block;
+       
+    }
+   
+}
+
+
